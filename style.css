@@ -31,6 +31,10 @@ body {
     animation: melt1 2s ease-out forwards;
   }
 
+  #swan-audio {
+    display: none
+  }
+
   .swan {
       position: absolute;
       margin: 0 auto;

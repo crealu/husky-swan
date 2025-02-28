@@ -1,6 +1,7 @@
 const menu = document.getElementById('menu');
 const swan = document.getElementById('swan');
 const text = document.getElementById("text");
+const squawk = document.getElementById("swan-audio");
 
 const burst = new mojs.Burst({
         radius:   { 0: 100 },
@@ -17,7 +18,7 @@ const burst = new mojs.Burst({
     function cueSwans() {
         swan.style.display = 'block';
         let t = 12;
-        let id = setInterval(frame, 300);
+        let id = setInterval(frame, 750);
         function frame() {
             t--;
             if (t % 2 == 0) {
@@ -52,6 +53,7 @@ menu.addEventListener("click", (event) => {
     text.classList.add("visible");
     setTimeout(() => {
         text.classList.remove("visible");
+        squawk.play();
         cueSwans()
     }, 2000);
     }, 2000);
