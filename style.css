@@ -67,10 +67,9 @@ body {
     position: absolute;
     opacity: 0;
     top: calc(50vh - 23px);
-    transition: opacity 1s ease-in;
     font-size: 20px;
-    transition: opacity 1s ease-in;
-    transition-delay: 0.5s;
+    transition: opacity 1.5s ease-in;
+    transition-delay: 0.75s;
 }
 
 .visible {
