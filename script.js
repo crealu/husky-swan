@@ -46,7 +46,7 @@ function squawk() {
 }
 
 function cueSwans() {
-    swan.style.display = 'block';
+    swan.style.opacity = '1';
     let t = 20;
     let id = setInterval(frame1, 750);
     function frame1() {
@@ -78,6 +78,8 @@ function cycleMelt() {
 
 menu.addEventListener("click", (event) => {
     cycleMelt();
+    squawk();
+
     setTimeout(() => {
         event.target.style.display = "none";
         burst.generate();
@@ -89,7 +91,6 @@ menu.addEventListener("click", (event) => {
         text.classList.add("visible");
         setTimeout(() => {
             text.classList.remove("visible");
-            squawk();
             cueSwans()
         }, 2000);
     }, 2000);
