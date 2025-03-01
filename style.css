@@ -75,3 +75,18 @@ body {
   .visible {
     opacity: 1;
   }
+
+  @media (max-width: 768px) and (min-width: 300px) {
+    .menu {
+        height: 90vh;
+        width: 90%;
+    }
+
+    .swan {
+        width: 80%;
+    }
+
+    .hidden-text {
+        font-size: 16px;
+    }
+  }
