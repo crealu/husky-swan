@@ -6,87 +6,87 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
-  }
+}
 
-  .menu-wrapper {
-      width: 100%;
-      display: flex;
+.menu-wrapper {
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .menu {
-      position: relative;
-      top: 2vh;
-      height: 90%;
-      cursor: pointer;
-      transition: transform 0.3s;
-  }
+.menu {
+    position: relative;
+    top: 2vh;
+    height: 90%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
 
-  .menu:hover {
+.menu:hover {
     transform: scale(1.01);	
-  }
+}
 
-  .melting {
+.melting {
     animation: melt1 2s ease-out forwards;
-  }
+}
 
-  #swan-audio {
-    display: none
-  }
+#swan-audio {
+    display: none;
+}
 
-  .swan {
-      position: absolute;
-      margin: 0 auto;
-      left: 0%;
-      right: 0%;
-      display: none;
-      width: 400px;
-      top: calc(50vh - 150px);
-  }
+.swan {
+    position: absolute;
+    margin: 0 auto;
+    left: 0%;
+    right: 0%;
+    display: none;
+    width: 400px;
+    top: calc(50vh - 150px);
+}
 
-  @keyframes melt {
+@keyframes melt {
     0% { transform: translateY(0) scaleX(1); }
     25% { transform: translateY(10px) scaleX(1.02); }
     50% { transform: translateY(30px) scaleX(1.05); }
     75% { transform: translateY(60px) scaleX(1.1); opacity: 0.5; }
     100% { transform: translateY(100px) scaleX(1.2); opacity: 0; }
-  }
+}
 
-  @keyframes melt1 {
+@keyframes melt1 {
     0% { 
-           clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
+        clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
     }
 
     100% { 
         clip-path: polygon(0% 0%, 100% 0%, 90% 110%, 10% 110%);
     }
-  }
+}
 
-  .hidden-text {
-          position: absolute;
-          opacity: 0;
-          top: calc(50vh - 23px);
-          transition: opacity 1s ease-in;
-          font-size: 20px;
-          transition-delay: 0.25s;
-  }
+.hidden-text {
+    position: absolute;
+    opacity: 0;
+    top: calc(50vh - 23px);
+    transition: opacity 1s ease-in;
+    font-size: 20px;
+    transition-delay: 0.25s;
+}
 
-  .visible {
+.visible {
     opacity: 1;
-  }
+}
 
-  @media (max-width: 768px) and (min-width: 300px) {
+@media (max-width: 768px) and (min-width: 300px) {
     .menu {
         height: 90vh;
-        width: 90%;
     }
 
     .swan {
         width: 80%;
+        top: calc(50vh - 100px);
     }
 
     .hidden-text {
         font-size: 16px;
     }
-  }
+}

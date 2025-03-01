@@ -26,9 +26,10 @@ const burst2 = new mojs.Burst({
 function cueSwans() {
     swan.style.display = 'block';
     let t = 20;
-    let id = setInterval(frame, 750);
-    function frame() {
+    let id = setInterval(frame1, 750);
+    function frame1() {
         t--;
+        console.log(t);
         if (t % 2 == 0) {
             swan.src = './media/squawk.svg';
         } else {
