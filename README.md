@@ -1,2 +1,2 @@
 # Husky Swan
-Online Menu for fine dining restaurant Husky Swan
+Online Menu for fine dining restaurant, The Husky Swan
